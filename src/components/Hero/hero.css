@@ -1,0 +1,42 @@
+.hero {
+    padding-block-start: calc(var(--section-padding) + 50px);
+    text-align: center;
+  }
+  
+  .hero-content { margin-block-end: 30px; }
+  
+  .hero-subtitle {
+    color:  var(--red-crayola);
+    font-size: initial;
+    font-weight: var(--fw-500);
+    padding :0 15rem 0 0px;
+    font-size: large;
+  }
+  
+  .hero-title { margin-block: 12px 8px; }
+  
+  .hero-text { font-size: var(--fs-5); }
+  
+  .hero .btn {
+    margin-inline: auto;
+    margin-block-start: 20px;
+  }
+
+  .section{
+    margin-top: 125px;
+  }
+  .herocontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h1{
+    font-size: xxx-large;
+  }
+
+
+  @media(max-width:990px){
+    .herocontainer{
+      display: block;
+    }
+  }
