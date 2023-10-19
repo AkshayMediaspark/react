@@ -47,7 +47,19 @@ const Header = () => {
       </nav>
 
       <button className="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler >
-        <AiOutlineMore name="menu-outline" className={`open ${menu ? 'active' : ''}`} onClick={() => setMenu(!menu)}></AiOutlineMore>
+      {!menu ? (
+    <AiOutlineMore
+      name="menu-outline"
+      className={`open ${menu ? 'active' : ''}`}
+      onClick={() => setMenu(!menu)}
+    ></AiOutlineMore>
+  ) : (
+    <AiOutlineClose
+      name="menu-outline"
+      className={`open ${menu ? 'active' : ''}`}
+      onClick={() => setMenu(!menu)}
+    ></AiOutlineClose>
+  )}
         
         
       </button>
